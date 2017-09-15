@@ -1,0 +1,14 @@
+{
+  "name": "AzulDeAndar",
+  "version": "1.0.0",
+  "description": "Desktop app to help teachers in the management of students' informations Edit",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/joaorobson/AzulDeAndar",
+  "author": "joaorobson",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
+}
