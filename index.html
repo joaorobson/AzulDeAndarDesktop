@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/photon.css" >
-    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" type="text/css" href="./semantic.min.css">
 
-    <title>Azul de Andar</title>
+    <title>AzulDeAndar</title>
+    <script>
+      // install babel hooks in the renderer process
+      require('babel-register');
+      require('./scripts/main');
+    </script>
   </head>
+
   <body>
-    <div class="window">
-      <div class="window-content">
-        <div class="pane-group">
-          <div class="pane-sm sidebar">
-            <nav class="nav-group">
-              <h5 class="nav-group-title" >Opções</h5>
-              <span class="nav-group-item" onClick="alert(1)">
-                <span class="icon icon-folder" ></span>
-                  Documents
-                </span>
-            </nav>
-          </div>
-      <object data="html/register_form.html"></object>
-      </div>
-    </div>
-  </div>
-
+    <div id="app"></div>
   </body>
-
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
 </html>

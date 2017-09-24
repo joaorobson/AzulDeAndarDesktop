@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "Desktop app to help teachers in the management of students' informations Edit",
   "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
   "repository": "https://github.com/joaorobson/AzulDeAndar",
   "author": "joaorobson",
   "devDependencies": {
     "electron": "~1.6.2"
-  }
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "electron -r babel-register ."
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "electron-updater": "^2.10.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "semantic-ui-react": "^0.73.1"
+  },
 }
