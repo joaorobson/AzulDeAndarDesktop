@@ -17,8 +17,10 @@
     "babel-preset-react": "^6.3.13",
     "babel-register": "^6.3.13",
     "electron-updater": "^2.10.0",
+    "lokijs": "^1.5.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "read-file-utf8": "^1.1.1",
     "semantic-ui-react": "^0.73.1"
   }
 }

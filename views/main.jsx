@@ -2,7 +2,8 @@
 
 import React from 'react';
 import {Label,Card,Menu, Header,Sidebar} from 'semantic-ui-react';
-
+var loki = require('lokijs');
+var read = require('read-file-utf8')
 export default class Main extends React.Component {
 constructor(props){
 super(props);
@@ -13,7 +14,14 @@ super(props);
 	this.handleItemClick = this.handleItemClick.bind(this);
 } 
 
-handleItemClick (e, { name }){ this.setState({ activeItem: name })}
+handleItemClick (e, { name }){ 
+var db = new loki('loki.json')
+var children = db.addCollection('children')
+children.insert({name:'Sleipnir', legs: 8})
+var data = read(__dirname + '/db.json')
+this.setState({ activeItem: name });
+console.log(db);
+}
   render() {
   const { activeItem } = this.state
   return  (
